@@ -1,0 +1,51 @@
+:-moz-drag-over/* Date Picker Styles */
+.date-picker {
+  @apply bg-white dark:bg-gray-900 rounded-lg shadow-lg p-4;
+}
+
+.date-picker .rdp {
+  @apply m-0;
+}
+
+.date-picker .rdp-caption {
+  @apply flex justify-between items-center mb-4;
+}
+
+.date-picker .rdp-nav_button {
+  @apply p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors;
+}
+
+.date-picker .rdp-head_cell {
+  @apply text-gray-500 dark:text-gray-400 font-medium text-sm uppercase;
+}
+
+.date-picker .rdp-cell {
+  @apply p-2 text-center;
+}
+
+.date-picker .rdp-day {
+  @apply w-10 h-10 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors;
+}
+
+.date-picker .rdp-day_selected {
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.date-picker .rdp-day_outside {
+  @apply text-gray-400 dark:text-gray-600;
+}
+
+.date-picker .rdp-day_disabled {
+  @apply text-gray-300 dark:text-gray-700 cursor-not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .date-picker {
+    @apply p-2;
+  }
+  
+  .date-picker .rdp-day {
+    @apply w-8 h-8;
+  }
+}

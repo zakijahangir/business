@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/google": "^1.0.15",
     "@ai-sdk/openai": "latest",
     "@expo/vector-icons": "latest",
     "@hookform/resolvers": "^3.9.1",
